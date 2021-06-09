@@ -24,21 +24,21 @@ yum update -y --skip-broken
 
 ## Ruby 升级
 
-Ruby 基于 Docker 部署，其升级流程：拉取镜像 > 删除容器 > 重建容器
-
 > 升级之前请确保您已经完成了服务器的镜像（快照）备份
 
-1. 登录服务器，编辑 */data/wwwroot/ruby/.env* 文件，将版本变量的值修改为目标版本号
+### Patch 升级
 
-2. 拉取目标版本的镜像
-   ```
-   cd /data/wwwroot/ruby
-   docker-compose pull
-   ```
-   > 如果显示没有镜像可拉取，则无需升级
+Ruby 基于 RVM 部署，小版本的更新非常简单
 
-3. 删除旧容器，重新创建 Ruby 容器
-    ```
-    docker-compose down -v
-    docker-compose up -d
-    ```
+```
+rvm upgrade 1.9.2-p136 1.9.2-p180
+rvm upgrade ree-2011.01 ree-2011-02
+```
+
+### 版本升级
+
+例如需将 Ruby 2.5 升级到 Ruby 2.6，只需一条命令
+
+```
+rvm install 2.6
+```

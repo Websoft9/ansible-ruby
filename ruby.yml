@@ -41,8 +41,10 @@
     - {role: role_cloud, tags: "role_cloud"}  
     - {role: role_docker, tags: "role_docker"}  
     - {role: role_mysql, tags: "role_mysql"}  
+    - {role: role_mongodb, tags: "role_mongodb"}  
     - {role: role_nodejs, tags: "role_nodejs"}  
     - {role: role_ruby, tags: "role_ruby"}  
+    - {role: role_redis, tags: "role_redis"}
     - {role: role_init, tags: "role_init"}  
     - {role: role_preend, tags: "preend"}
     - {role: role_end, tags: "role_end"}

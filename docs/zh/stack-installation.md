@@ -17,7 +17,7 @@
 
 ## 登录数据库
 
-Ruby Runtime 预装包中内置 MySQL 及可视化数据库管理工具 `phpMyadmin` ，[登录MySQL](/zh/admin-mysql.md) 管理用户和数据库
+Ruby Runtime 内置 MySQL 及可视化数据库管理工具 `phpMyadmin` ，[登录MySQL](/zh/admin-mysql.md) 管理用户和数据库
 
 ![9panel](https://libs.websoft9.com/Websoft9/DocsPicture/zh/9panel/9panel-mysql-websoft9.png)
 

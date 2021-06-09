@@ -27,23 +27,63 @@ Ruby 域名绑定操作步骤：
    ```
 4. 保存配置文件，重启 [Nginx 服务](/zh/admin-services.md#nginx)
 
-## 重置密码
+## 隔离环境
 
-常用的 Ruby 重置密码相关的操作主要有修改密码和找回密码两种类型：
+Ruby RVM 允许我们为依赖项创建一个隔离的环境。如果你对 Python 非常熟悉，那么 RVM Gemset 就类似于 Python3 中的 VENV 或者 Python 2 中的 Virtualenv
 
-### 修改密码
+```
+Ruby enVironment Manager 1.29.12 (latest) (c) 2009-2020 Michal Papis, Piotr Kuczynski, Wayne E. Seguin
 
-1. 登录 Ruby 后台，依次打开：【Manage】>【Staff】，找到所需修改密码的账号对象
-  ![Ruby 修改密码](https://libs.websoft9.com/Websoft9/DocsPicture/en/ruby/ruby-modifypw001-websoft9.png)
+Usage:
 
-2. 开始修改密码
-  ![Ruby 修改密码](https://libs.websoft9.com/Websoft9/DocsPicture/en/ruby/ruby-modifypw002-websoft9.png)
+    rvm gemset [action]
+    rvm --force gemset [action]
 
-### 找回密码
+Actions:
 
-如果用户忘记了密码，建议通过邮件的方式找回密码：
+    copy, create, delete (alias: remove), dir, empty, export, gemdir, globalcache, import, install, list, list_all, name, pristine, rename (alias: move), unpack, update, use
 
-1. 完成 [SMTP 设置](/zh/solution-smtp.md)
+Description:
 
-2. 打开 Ruby 登录页面，点击【Forgot】开始通过邮件找回密码
-  ![Ghost 找回密码](https://libs.websoft9.com/Websoft9/DocsPicture/en/ruby/ruby-forgetpw-websoft9.png)
+  Commands for working with and manipulating gemsets within RVM.
+
+  Any command is run in context of current ruby/gemset; call 'rvm current' to find out which is currently used.
+
+  Note that 'system' supports only exporting/importing gems.
+
+Rejection:
+
+  If you do not want to use gemsets and want to ignore them you can use
+  command line flag `--ignore-gemsets`:
+
+    rvm use 1.9.3@my_project --ignore-gemsets
+
+  it will ignore @my_project and @global -  only default gemset will be set.
+
+  It can be persisted with:
+
+    echo "export rvm_ignore_gemsets_flag=1" >> ~/.rvmrc
+
+For additional documentation please visit https://rvm.io
+```
+
+## 修改 gem 源
+
+rubygems.org 存放在 Amazon S3 上，有时由于网络问题导致无法安装
+
+```
+# 查询当前源，假设为：https://rubygems.org/
+gem sources -l
+
+# 删除当前源
+gem sources --remove https://rubygems.org/
+
+# 安装替换源
+gem sources -a https://gems.ruby-china.com/
+
+# 查询替换后的结果
+gem sources -l
+
+# bundle 源更换  
+bundle config mirror.https://rubygems.org https://gems.ruby-china.com/
+```
