@@ -17,8 +17,9 @@ module.exports = [
     collapsable: false,
     children: [
       '/zh/solution-addapps',
-      '/zh/solution-https',
+      '/zh/solution-rails',
       '/zh/solution-cli',
+      '/zh/solution-https',
       '/zh/solution-backup',
       '/zh/solution-upgrade',
       '/zh/solution-more',

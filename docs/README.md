@@ -8,7 +8,7 @@ This documentation is provided by [Websoft9](https://www.websoft9.com/). It can 
 
 [Ruby](https://ruby-server.apache.org/) is the most widely deployed open source message broker. With more than 35,000 production deployments of Ruby world-wide at small startups and large enterprises, Ruby is the most popular open source message broker.
 
-![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/ruby/ruby-gui-websoft9.png)
+![img](https://libs.websoft9.com/Websoft9/DocsPicture/en/ruby/ruby-stackframe-websoft9.png)
 
 ---
 

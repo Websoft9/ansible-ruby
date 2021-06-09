@@ -1,4 +1,4 @@
-# RabbitMQ Cloud Installer
+# Ruby Runtime Cloud Installer
 
 ![](https://libs.websoft9.com/common/websott9-cloud-installer.png) 
 
@@ -6,7 +6,7 @@
 
 [English](/README.md) | [简体中文](/README-zh.md)  
 
-**RabbitMQ Cloud Installer**, developed by [Websoft9](https://www.websoft9.com), is an automatic installation program of [Apache RabbitMQ](https://rabbitmq.apache.org/) based on Ansible and shell. It helps user install RabbitMQ and pre-configure required items automatically and users only need to run a command on Linux. It simplifies the complicated installation and initialization process.  
+**Ruby Runtime Cloud Installer**, developed by [Websoft9](https://www.websoft9.com), is an automatic installation program of **Ruby Runtime** based on Ansible and shell. It helps user install Ruby Runtime and pre-configure required items automatically and users only need to run a command on Linux. It simplifies the complicated installation and initialization process.  
 
 ## System Requirement
 
@@ -14,16 +14,15 @@ System Requirement to install this repository are as following：
 
 | Conditions       | Details                               | Notes                |
 | ------------------- | --------------------------------| -------------------- |
-| Operating System   | CentOS7.x, Ubuntu18.04, Amazon Linux2 | Optional                 |
+| Operating System   | CentOS7.x, Ubuntu, Amazon Linux2 | Optional                 |
 | Public Cloud     | AWS, Azure, Alibaba Cloud, HUAWEI ClOUD, Tencent Cloud    | Optional                 |
 | Private Cloud     | KVM, VMware, VirtualBox, OpenStack    | Optional                 |
 | Server Configuration | vCPU no less than 1 core, Memory no less than  2 GIB, Storage no less than 10 GB, Bandwidth no less than 100M ||
 
-To learn more information, please view [Installation & Configuration](https://rabbitmq.apache.org/installation.html).
 
 ## Ecosystem
 
-Core components of this repository: Apache RabbitMQ, Nginx, PostgreSQL, Docker, phpPgAdmin on docker
+Core components of this repository: Apache Ruby Runtime, Nginx, PostgreSQL, Docker, phpPgAdmin on docker
 
 Learn more about [Parameters](/docs/stack-components.md).
 
@@ -44,7 +43,7 @@ If the network is broken or blocked, SSH will be interrupted and the installatio
 
 #### Image on Cloud 
 
-Follow our [RabbitMQ image](https://apps.websoft9.com/rabbitmq) for installation on major Cloud Platform.
+Follow our [Ruby Runtime image](https://apps.websoft9.com/rabbitmq) for installation on major Cloud Platform.
 
 ## Documentation
 
@@ -70,7 +69,7 @@ Yes.
 
 #### How to install and view the latest release?
 
-Get the RabbitMQ version from [RabbitMQ repository](https://github.com/apache/incubator-rabbitmq/releases), and modify the Ansible variable **[rabbitmq_version](/roles/rabbitmq/defaults/main.yml)** to change the RabbitMQ version for this repository. 
+Get the Ruby Runtime version from [Ruby Runtime repository](https://github.com/apache/incubator-rabbitmq/releases), and modify the Ansible variable **[rabbitmq_version](/roles/rabbitmq/defaults/main.yml)** to change the Ruby Runtime version for this repository. 
 
 #### Is the default password safe?
 

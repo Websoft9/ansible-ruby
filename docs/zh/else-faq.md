@@ -8,7 +8,7 @@
 - Rake 是 Ruby 的构建程序，类似 Linux 中的 make
 - Rails 是一个流行的 Ruby 应用程序开发框架
 
-####RVM 是什么？
+#### RVM 是什么？
 
 RVM 是一个用于安装和管理多版本 Ruby 的命令行工具，虽然不是 Ruby 官方出品，但非常流行
 
@@ -24,20 +24,13 @@ rails s -b 0.0.0.0
 
 #### 本项目中 Ruby 采用何种安装方式？
 
-采用 rpm/deb 包的安装方式
+采用 rvm 安装，支持多版本
 
-#### 如何以调试模式启动Ruby服务？
+#### 推荐 Ruby 的学习资源？
 
-```
-systemctl stop ruby-server
-ruby-server console
-```
+[Awesome Ruby](https://github.com/chendelin1982/awesome-ruby)
 
-#### 是否可以通过命令行修改Ruby后台密码？
-
-可以，`rubyctl change_password  admin newpassword`
-
-#### 如果没有域名是否可以部署 Ruby？
+#### 如果没有域名是否可以部署 Ruby 程序？
 
 可以，访问`http://服务器公网IP` 即可
 
