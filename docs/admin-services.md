@@ -1,17 +1,17 @@
 # Start or Stop the Services
 
-These commands are required when you use the RabbitMQ of Websoft9.
+These commands are required when you use the Ruby of Websoft9.
 
-### RabbitMQ
+### Ruby
 
 ```shell
-sudo systemctl start rabbitmq-server
-sudo systemctl stop rabbitmq-server
-sudo systemctl restart rabbitmq-server
-sudo systemctl status rabbitmq-server
+sudo systemctl start ruby-server
+sudo systemctl stop ruby-server
+sudo systemctl restart ruby-server
+sudo systemctl status ruby-server
 
-# you can use this debug mode if RabbitMQ service can't run
-rabbitmq-server console
+# you can use this debug mode if Ruby service can't run
+ruby-server console
 ```
 
 ### MySQL

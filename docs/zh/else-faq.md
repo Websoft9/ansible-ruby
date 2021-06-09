@@ -1,25 +1,43 @@
 # FAQ
 
-#### RabbitMQ 是否支持多语言？
+#### Ruby 体系中 Gem, Bundler, Rake, Rails 是什么？
 
-支持
+- Gem 是 Ruby 的包管理工具，类似 Python 中的 pip
+- Bundler 是基于 Ruby 应用程序目录中的 Gemfile ，用于拉取依赖包的管理工具
+- Gemfile 是 Ruby 依赖包清单文件
+- Rake 是 Ruby 的构建程序，类似 Linux 中的 make
+- Rails 是一个流行的 Ruby 应用程序开发框架
 
-#### 本项目中 RabbitMQ 采用何种安装方式？
+####RVM 是什么？
+
+RVM 是一个用于安装和管理多版本 Ruby 的命令行工具，虽然不是 Ruby 官方出品，但非常流行
+
+#### Ruby 体系中有哪些常用的应用程序服务器？
+
+WEBrick, passenger, Puma 等
+
+#### Rails 如何才能被外网访问？
+
+```text
+rails s -b 0.0.0.0
+```
+
+#### 本项目中 Ruby 采用何种安装方式？
 
 采用 rpm/deb 包的安装方式
 
-#### 如何以调试模式启动RabbitMQ服务？
+#### 如何以调试模式启动Ruby服务？
 
 ```
-systemctl stop rabbitmq-server
-rabbitmq-server console
+systemctl stop ruby-server
+ruby-server console
 ```
 
-#### 是否可以通过命令行修改RabbitMQ后台密码？
+#### 是否可以通过命令行修改Ruby后台密码？
 
-可以，`rabbitmqctl change_password  admin newpassword`
+可以，`rubyctl change_password  admin newpassword`
 
-#### 如果没有域名是否可以部署 RabbitMQ？
+#### 如果没有域名是否可以部署 Ruby？
 
 可以，访问`http://服务器公网IP` 即可
 
@@ -35,7 +53,7 @@ rabbitmq-server console
 
 连接服务器，编辑 [phpMyAdmin 配置文件](/zh/stack-components.md#phpmyadmin)，将其中的 `Require all granted` 更改为 `Require ip 192.160.1.0`，然后重启 Apache 服务
 
-#### 是否可以修改RabbitMQ的源码路径？
+#### 是否可以修改Ruby的源码路径？
 
 不可以
 

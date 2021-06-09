@@ -4,21 +4,20 @@ sidebarDepth: 3
 
 # 参数
 
-RabbitMQ 预装包包含 RabbitMQ 运行所需一序列支撑软件（简称为“组件”），下面列出主要组件名称、安装路径、配置文件地址、端口、版本等重要的信息。
+Ruby 预装包包含 Ruby 运行所需一序列支撑软件（简称为“组件”），下面列出主要组件名称、安装路径、配置文件地址、端口、版本等重要的信息。
 
 ## 路径
 
-本部署方案中的 RabbitMQ 采用 Docker 部署，运行 `docker ps` 查看运行的容器。
-```
-CONTAINER ID   IMAGE                           COMMAND                  CREATED              STATUS                PORTS                               NAMES
-4ff55aec7671   rabbitmq                         "/docker-entrypoint.…"   11 seconds ago       Up 10 seconds         0.0.0.0:9010->3000/tcp              rabbitmq
-3067c535663b   mysql:5.7                       "docker-entrypoint.s…"   About a minute ago   Up 58 seconds         33060/tcp, 0.0.0.0:3309->3306/tcp   rabbitmq-mysql
-```
+### Ruby
 
-### RabbitMQ
+本环境采用 [RVM](https://rvm.io/)预装了 Ruby 以及所需的其他软件包：[gem](https://rubygems.org/), rake, bundler 等。  
 
-RabbitMQ 安装目录： */data/rabbitmq*  
-RabbitMQ 日志目录： */data/logs/rabbitmq*  
+Ruby 安装目录： */usr/local/rvm/rubies/ruby-version*  
+Ruby 命令命令： */usr/local/rvm/rubies/ruby-2.4.10/bin*  
+RVM 安装目录： */usr/local/rvm*  
+Ruby 网站目录： */data/wwwroot*  
+
+> version 为版本号，例如：2.4.10。gem, bundler 等工具与版本强相关
 
 ### Nginx
 
@@ -57,7 +56,7 @@ Docker daemon.json 文件：默认没有创建，请到 */etc/docker* 目录下�
 
 | 名称 | 端口号 | 用途 |  必要性 |
 | --- | --- | --- | --- |
-| TCP | 15672 | 通过 HTTP 访问 RabbitMQ 控制台 | 可选 |
+| TCP | 15672 | 通过 HTTP 访问 Ruby 控制台 | 可选 |
 | TCP | 5672 | epmd | 可选 |
 | TCP | 55672 | Erlang distribution | 可选 |
 
@@ -75,19 +74,15 @@ lsb_release -a
 # Nginx  Version
 nginx -V
 
-# Java version
-java -v
+# Apache version
+apache -v
 
 # Docker Version
 docker -v
 
-# MySQL version
-docker inspect rabbitmq-mysql | grep "MYSQL_VERSION"
-
-# erlang  Version
-yum info erlang
-apt show erlang
-
-# RabbitMQ version
-rabbitmqctl status | grep RabbitMQ*
+# Ruby version
+ruby -v
+bundler -v
+gem -v
+rails -v
 ```
