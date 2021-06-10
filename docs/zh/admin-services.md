@@ -11,15 +11,6 @@ sudo systemctl restart rails
 sudo systemctl status rails
 ```
 
-### Apache
-
-```shell
-sudo systemctl start apache
-sudo systemctl stop apache
-sudo systemctl restart apache
-sudo systemctl status apache
-```
-
 ### Nginx
 
 ```shell

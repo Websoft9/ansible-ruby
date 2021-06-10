@@ -6,18 +6,15 @@ Use the **SSH** to connect your Server and run the command `sudo cat /credential
 
 Here are the required username and password for Ruby installation and configuration.
 
-## Ruby
-
-* Ruby administrator username: `admin`
-* Ruby administrator password: Get it form the file of your server */credentials/password.txt*
-  > If there no password.txt exist, the administrator password is `admin`
-
 ## MySQL
 
 * MySQL administrator username: `root`
 * MySQL administrator password: Get it from the file of your server */credentials/password.txt*  
 
-> If you want to log in MySQL, refer to [MySQL Web interface Management](/admin-mysql.md)
+## MongoDB
+
+* MySQL administrator username: `root`
+* MySQL administrator password: Get it from the file of your server */credentials/password.txt*  
 
 ## Linux
 

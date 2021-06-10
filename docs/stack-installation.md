@@ -1,34 +1,39 @@
 # Initial Installation
 
-If you have completed the Ruby deployment, follow the steps below to start a quick use.
+If you have completed the Ruby Runtime deployment on Cloud Platform, the following steps is for you to start use it quikly
 
 ## Preparation
 
-1. Get the **Server's Internet IP** of Server on your Cloud Platform.
-2. Check your **[Inbound of Security Group Rule](https://support.websoft9.com/docs/faq/tech-instance.html)** of Cloud Console to ensure the **TCP:8161** is allowed.
-3. Make a domain resolution on your Cloud Console if you want to use domain for Ruby.
+1. Get the **Internet IP** on your Cloud Platform
+2. Check you **[Inbound of Security Group Rule](https://support.websoft9.com/docs/faq/tech-instance.html)** of Cloud Console to ensure the TCP:80 is allowed
+3. Make a domain resolution on your DNS Console if you want to use domain for Ruby Runtime
 
-## Ruby Installation Wizard
+## Usability test
 
-1. Use local Chrome or Firefox to access the URL *http://DNS:15672* or *http://Server's Server's Internet IP:15672*. You will enter installation wizard of Ruby.
-   ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/ruby/ruby-login-websoft9.png)
+1. 使用本地浏览器访问网址：*http:/服务器公网IP*，进入 Rails 演示项目页面
+   ![Ruby Rails](https://libs.websoft9.com/Websoft9/DocsPicture/zh/ruby/ruby-railsgui-websoft9.png)
 
-2. Log in Ruby web console. ([Don't have password?](/stack-accounts.md#ruby)) 
-   ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/ruby/ruby-bk-websoft9.png)
+2. Using local Chrome or Firefox to visit the URL *http://Internet IP/9panel* to enter the boot page
+   ![9panel](https://libs.websoft9.com/Websoft9/DocsPicture/en/9panel/9panelmain-websoft9.png)
 
-3. Set you new password from: 【Users】>【Admin】>【Permissions】>【Update this user】
-   ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/ruby/ruby-pw-websoft9.png)
+3. You can get the basics of image, manage the database, access docs, and helpdesk from 9Panel
 
-> More guide about Ruby, please refer to [Ruby Documentation](https://www.ruby.com/documentation.html).
+## Log in Database
 
-## Ruby Setup wizard
+Ruby Runtime includes MySQL and Web-GUI tool `phpMyAdmin`, [Log in MySQL](/zh/admin-mysql.md) to manage your database now
+
+![9panel](https://libs.websoft9.com/Websoft9/DocsPicture/en/9panel/9panel-mysql-websoft9.png)
+
+## Application Installation
+
+You can install multiple applications on Ruby Runtime, refer to [Applications Deployment](/solution-deployment.md)
 
 ## Q&A
 
-#### Can't visit the start page of Ruby?
+#### I can't visit the start page of Ruby Runtime?
 
-Your TCP:15672 of Security Group Rules is not allowed, so there is no response from Chrome or Firefox.
+Your TCP:80 of Security Group Rules is not allowed so there no response from Chrome or Firefox
 
-#### Ruby service can't start? 
-Reason:  
-Solution:  
+#### What's 9Panel?
+
+[9Panel](https://github.com/Websoft9/9panel) is an opensource component included in some image of Websoft9, it is powered by Websoft9. 9Panel is a set of HTML pages for quickly using image of Websoft9. You should delete all the files in 9Panel folder if you do not want to delete 9Panel

@@ -32,6 +32,7 @@ module.exports = [
     children: [
       '/zh/admin-services',
       '/zh/admin-mysql',
+      '/zh/admin-mongodb',
       ['https://support.websoft9.com/docs/linux/zh/webs-nginx.html','Nginx'],
       ['https://support.websoft9.com/docs/linux/zh/admin-practices.html','Linux'],
     ]

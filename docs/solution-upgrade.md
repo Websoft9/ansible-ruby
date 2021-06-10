@@ -26,21 +26,21 @@ sudo yum update -y --skip-broken
 
 ## Upgrade Ruby
 
-This deployment solution is based on Docker and so you can upgrade Ruby by the standard process of Docker:  
+> 升级之前请确保您已经完成了服务器的镜像（快照）备份
 
-> You should complete an image or snapshot backup for instance before upgrade
+### Patch 升级
 
-1. Use **SFTP** to login Server, modify **APP_VERSION** in the **.env** file of Ruby directory
+Ruby 基于 RVM 部署，小版本的更新非常简单
 
-2. Go to the code-server root directory, then pull new images
-   ```
-   cd /data/wwwroot/ruby
-   docker-compose pull
-   ```
-3. Delete old container and recreate new container
-   ```
-   docker-compose down -v
-   docker-compose up -d
-   ```
+```
+rvm upgrade 1.9.2-p136 1.9.2-p180
+rvm upgrade ree-2011.01 ree-2011-02
+```
 
-Refer to the official docs: [Upgrading Ruby](https://www.ruby.com/upgrade.html)
+### 版本升级
+
+例如需将 Ruby 2.5 升级到 Ruby 2.6，只需一条命令
+
+```
+rvm install 2.6
+```

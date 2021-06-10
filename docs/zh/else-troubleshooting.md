@@ -8,7 +8,7 @@
 
 日志文件路径为：`/data/logs`。检索关键词 **Failed** 或者 **error** 查看错误
 
-#### Ruby服务无法启动？
+#### MySQL 服务无法启动？
 
 服务无法启动最常见的问题包括：磁盘空间不足，内存不足，配置文件错误。  
 建议先通过命令进行排查  
@@ -21,8 +21,7 @@ df -lh
 free -lh
 
 # 查看服务状态和日志
-systemctl status ruby
-journalctl -u ruby
+systemctl status mysql
 ```
 
 #### 通过 Ansible 无法运行 `gem install bundler` 这样的程序？
@@ -38,4 +37,3 @@ journalctl -u ruby
 #### /urs/bin 目录下找不到 gem, ruby 等可执行文件或链接？
 
 本项目通过 RVM 安装，通过 `source /etc/profile.d/rvm.sh` 实现 gem, ruby 等命令的全局化。
-

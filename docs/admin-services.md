@@ -2,16 +2,22 @@
 
 These commands are required when you use the Ruby of Websoft9.
 
-### Ruby
+### Rails
 
 ```shell
-sudo systemctl start ruby-server
-sudo systemctl stop ruby-server
-sudo systemctl restart ruby-server
-sudo systemctl status ruby-server
+sudo systemctl start rails
+sudo systemctl stop rails
+sudo systemctl restart rails
+sudo systemctl status rails
+```
 
-# you can use this debug mode if Ruby service can't run
-ruby-server console
+### Nginx
+
+```shell
+sudo systemctl start nginx
+sudo systemctl stop nginx
+sudo systemctl restart nginx
+sudo systemctl status nginx
 ```
 
 ### MySQL
@@ -23,37 +29,38 @@ sudo systemctl restart mysql
 sudo systemctl status mysql
 ```
 
+### MongoDB
+
+```shell
+sudo systemctl start mongo
+sudo systemctl stop mongo
+sudo systemctl restart mongo
+sudo systemctl status mongo
+```
+
 ### Redis
 
 ```shell
-sudo systemctl start redis
-sudo systemctl stop redis
-sudo systemctl restart redis
-sudo systemctl status redis
+systemctl start redis
+systemctl stop redis
+systemctl restart redis
+systemctl status redis
+```
+
+### phpMyAdmin
+
+```shell
+sudo docker start phpmyadmin
+sudo docker stop phpmyadmin
+sudo docker restart phpmyadmin
+sudo docker stats pgadmin
 ```
 
 ### Docker
+
 ```shell
 sudo systemctl start docker
-sudo systemctl stop docker
 sudo systemctl restart docker
+sudo systemctl stop docker
 sudo systemctl status docker
-```
-
-### phpMyAdmin on Docker
-```shell
-sudo docker inspect phpmyadmin
-sudo docker start phpmyadmin
-sudo docker restart phpmyadmin
-sudo docker stop phpmyadmin
-sudo docker rm phpmyadmin
-```
-
-### ONLYOFFICE Document Server on Docker
-```shell
-sudo docker inspect onlyofficedocumentserver
-sudo docker start onlyofficedocumentserver
-sudo docker restart onlyofficedocumentserver
-sudo docker stop onlyofficedocumentserver
-sudo docker rm onlyofficedocumentserver
 ```

@@ -44,7 +44,7 @@ rails s -b 0.0.0.0
 
 #### 如果没有域名是否可以部署 Ruby 程序？
 
-可以，访问`http://服务器公网IP` 即可
+可以，访问`http://服务器公网IP:端口` 即可
 
 #### 数据库 root 用户对应的密码是多少？
 
@@ -54,19 +54,15 @@ rails s -b 0.0.0.0
 
 有，内置phpMyAdmin，访问地址：*http://服务器公网IP:9090*
 
-#### 如何禁止外界访问phpMyAdmin？
-
-连接服务器，编辑 [phpMyAdmin 配置文件](/zh/stack-components.md#phpmyadmin)，将其中的 `Require all granted` 更改为 `Require ip 192.160.1.0`，然后重启 Apache 服务
-
 #### 是否可以修改Ruby的源码路径？
 
-不可以
+可以
 
 #### 如何修改上传的文件权限?
 
 ```shell
 # 拥有者
-chown -R apache.apache /data/wwwroot/
+chown -R ruby.ruby /data/wwwroot/
 # 读写执行权限
 find /data/wwwroot/ -type d -exec chmod 750 {} \;
 find /data/wwwroot/ -type f -exec chmod 640 {} \;

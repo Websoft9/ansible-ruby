@@ -42,11 +42,30 @@ phpMyAdmin 是一款可视化 MySQL 管理工具，在本项目中它基于 Dock
 phpMyAdmin directory：*/data/apps/phpmyadmin*  
 phpMyAdmin docker compose file：*/data/apps/phpmyadmin/docker-compose.yml* 
 
+### MongoDB
+
+MongoDB 数据目录: */var/lib/mongodb*  
+MongoDB 配置文件: */etc/mongod.conf*  
+MongoDB 日志文件: */var/log/mongodb*  
+
+### adminMongo
+
+adminMongo 是一款可视化 MongoDB 管理工具，采用 Docker 安装
+
+Docker 根目录: */var/lib/docker*  
+Docker 镜像目录: */var/lib/docker/image*  
+
 ### Docker
 
 Docker 根目录: */var/lib/docker*  
 Docker 镜像目录: */var/lib/docker/image*   
 Docker daemon.json 文件：默认没有创建，请到 */etc/docker* 目录下根据需要自行创建   
+
+### Redis
+
+Redis 配置文件： */etc/redis.conf*  
+Redis 数据目录： */var/lib/redis*  
+Redis 日志文件： */var/log/redis/redis.log*
 
 ## 端口号
 
@@ -56,9 +75,11 @@ Docker daemon.json 文件：默认没有创建，请到 */etc/docker* 目录下�
 
 | 名称 | 端口号 | 用途 |  必要性 |
 | --- | --- | --- | --- |
-| TCP | 15672 | 通过 HTTP 访问 Ruby 控制台 | 可选 |
-| TCP | 5672 | epmd | 可选 |
-| TCP | 55672 | Erlang distribution | 可选 |
+| TCP | 80 | 通过 HTTP 访问 Rails 演示页面 | 可选 |
+| TCP | 3306 | MySQL 远程端口 | 可选 |
+| TCP | 27017 | MongoDB 远程端口 | 可选 |
+| TCP | 9090 | phpMyAdmin 访问端口| 可选 |
+| TCP | 9091 | AdminMongo 访问端口| 可选 |
 
 ## 版本号
 
@@ -79,6 +100,12 @@ apache -v
 
 # Docker Version
 docker -v
+
+# MySQL version
+mysql -V
+
+# MongoDB version
+mongodb -V
 
 # Ruby version
 ruby -v

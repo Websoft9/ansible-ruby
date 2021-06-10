@@ -43,3 +43,15 @@ bundle install --deployment
 # 安装所有包到项目目录
 bundle install --path=$(pwd)
 ```
+
+#### 如何指定 RailS 应用程序的端口？
+
+参数 -p 即指定端口号
+
+```
+rails s -p 8000
+```
+
+#### 一个 rails 框架可以部署几个应用？
+
+有待研究。建议部署部署一个。

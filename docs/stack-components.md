@@ -8,8 +8,14 @@ This solution use Docker to deploy all service, you can run the command `docker 
 
 ### Ruby
 
-Ruby installation directory:  */data/ruby*  
-Ruby logs directory:  */data/logs/ruby*  
+本环境采用 [RVM](https://rvm.io/)预装了 Ruby 以及所需的其他软件包：[gem](https://rubygems.org/), rake, bundler 等。  
+
+Ruby 安装目录： */usr/local/rvm/rubies/ruby-version*  
+Ruby 命令命令： */usr/local/rvm/rubies/ruby-2.4.10/bin*  
+RVM 安装目录： */usr/local/rvm*  
+Ruby 网站目录： */data/wwwroot*  
+
+> version 为版本号，例如：2.4.10。gem, bundler 等工具与版本强相关
 
 ### Nginx
 
@@ -27,10 +33,12 @@ MySQL configuration file: */etc/my.cnf*
 
 MySQL Web Management refer to [MySQL Management](/admin-mysql.md)
 
-### MySQL on Docker
+###  phpMyAdmin
 
-MySQL data directory: */data/db/mysql*  
-MySQL Web Management refer to [MySQL Management](/admin-mysql.md)
+phpMyAdmin is a visual MySQL management tool, is installed based on docker.  
+
+phpMyAdmin directory：*/data/apps/phpmyadmin*  
+phpMyAdmin docker compose file：*/data/apps/phpmyadmin/docker-compose.yml*  
 
 ### MongoDB
 
@@ -51,12 +59,11 @@ Docker root directory: */var/lib/docker*
 Docker image directory: */var/lib/docker/image*   
 Docker daemon.json: please create it when you need and save to to the directory */etc/docker*   
 
-###  phpMyAdmin
+### Redis
 
-phpMyAdmin is a visual MySQL management tool, is installed based on docker.  
-
-phpMyAdmin directory：*/data/apps/phpmyadmin*  
-phpMyAdmin docker compose file：*/data/apps/phpmyadmin/docker-compose.yml* 
+Redis configuration file: */etc/redis.conf*  
+Redis data directory: */var/lib/redis*  
+Redis logs file: */var/log/redis/redis.log*
 
 ## Ports
 
@@ -90,16 +97,21 @@ lsb_release -a
 # Nginx  Version
 nginx -V
 
-# Java version
-java -v
+# Apache version
+apache -v
 
 # Docker Version
 docker -v
 
-# erlang  Version
-yum info erlang
-apt show erlang
+# MySQL version
+mysql -V
+
+# MongoDB version
+mongodb -V
 
 # Ruby version
-rubyctl status | grep Ruby*
+ruby -v
+bundler -v
+gem -v
+rails -v
 ```

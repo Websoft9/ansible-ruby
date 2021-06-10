@@ -10,10 +10,13 @@
 
 ## 测试可用性
 
-1. 使用本地 Chrome 或 Firefox 浏览器访问网址：*http:/服务器公网IP/9panel*, 就进入引导页面9Panel
-   ![9panel](https://libs.websoft9.com/Websoft9/DocsPicture/zh/9panel/9panelmain-websoft9.png)
+1. 使用本地浏览器访问网址：*http:/服务器公网IP*，进入 Rails 演示项目页面
+   ![Ruby Rails](https://libs.websoft9.com/Websoft9/DocsPicture/zh/ruby/ruby-railsgui-websoft9.png)
 
-2. 通过 9Panel 可以快速了解镜像基本情况，管理数据库，找到帮助文档，寻求人工支持
+2. 使用本地浏览器访问网址：*http:/服务器公网IP/9panel*, 就进入引导页面9Panel
+   ![9panel](https://libs.websoft9.com/Websoft9/DocsPicture/zh/ruby/9panelmain-websoft9.png)
+
+3. 通过 9Panel 可以快速了解环境的基本情况，并管理数据库，找到帮助文档，寻求人工支持
 
 ## 登录数据库
 
@@ -23,7 +26,7 @@ Ruby Runtime 内置 MySQL 及可视化数据库管理工具 `phpMyadmin` ，[登
 
 ## 安装网站
 
-Ruby Runtime 可以用来部署多个 PHP 网站，[马上开始吧](/zh/solution-deployment.md)
+Ruby Runtime 可以用来部署多个 Ruby 网站，[马上开始吧](/zh/solution-deployment.md)
 
 ## 常见问题
 

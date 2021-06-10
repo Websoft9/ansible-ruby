@@ -2,10 +2,6 @@
 
 Each of the following solutions has been proved to be effective and we hope it can give you help.
 
-## Configuration 
-
-Refer to the official docs: https://www.ruby.com/configure.html
-
 ## Binding Domain
 
 The precondition for binding a domain is that Ruby can accessed by domain name.
@@ -29,24 +25,32 @@ Steps for binding Ruby domain are as follows:
    sudo systemctl restart nginx
    ```
 
-## Resetting Password
+## 隔离环境
 
-There are two main measures to reset password.
+有两种隔离环境的解决方案：
 
-### Changing password
+* RVM Gemset
+* Bundler
 
-Take the steps below:
+经过实验验证，bundle 可以很方便的将项目所需的软件包安装到项目目录中。  
 
-1. log in the Ruby backend, open 【Manage】>【Staff】 and find the user account, of which you want to change password;
+## gem 源
 
-2. start to change the password.
+rubygems.org 存放在 Amazon S3 上，有时由于网络问题导致无法安装
 
-### Forgot Password
+```
+# 查询当前源，假设为：https://rubygems.org/
+gem sources -l
 
-Try to retrieve your password through e-mail when forgot it.
+# 删除当前源
+gem sources --remove https://rubygems.org/
 
-Follow the steps below:
+# 安装替换源
+gem sources -a https://gems.ruby-china.com/
 
-1. complete [SMTP setting](/solution-smtp.md);
+# 查询替换后的结果
+gem sources -l
 
-2. open
+# bundle 源更换  
+bundle config mirror.https://rubygems.org https://gems.ruby-china.com/
+```
