@@ -52,3 +52,5 @@ gem sources -l
 # bundle 源更换  
 bundle config mirror.https://rubygems.org https://gems.ruby-china.com/
 ```
+
+> gemfile 中也可以指定源，这样就无需全局设置
