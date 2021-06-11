@@ -1,26 +1,29 @@
-# Global
-region: "0"
 
-common_os_support: ["CentOS", "Ubuntu", "Amazon", "OracleLinux"]
+w9panel_webs: "nginx" 
+w9panel_set_infrastructure: "Python runtime" 
+w9panel_set_apps: 
+  - "rails"
 
-apache_certbot: True
 nginx_certbot: True
-
 nginx_reverse_proxy_port: "3000"
 
-# role_mysql
+# MySQL 版本和默认密码
 mysql_version: "5.7"       
 mysql_root_password: "123456"
 mysql_remote: True
 
-# docker
+ruby_applications:
+  - rails
+  
 docker_applications: 
   - phpmyadmin
 
-# init passsword of database
+# install certbot
+preend_certbot: True
+
+# 初始化 MySQL 
 init_db: 
-    mysql:
-      admin: root
-      password: "123456"  
-  
+  mysql:
+    admin: root
+    password: "123456"
 
