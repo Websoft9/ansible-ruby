@@ -38,14 +38,14 @@
 
   roles:
     - {role: role_common, tags: "role_common"}  
-    - {role: role_cloud, tags: "role_cloud"}  
+    - {role: role_cloud, tags: "role_cloud"} 
+    - { role: role_nginx , tags: "role_nginx"}
     - {role: role_docker, tags: "role_docker"}  
     - {role: role_mysql, tags: "role_mysql"}  
-    - {role: role_mongodb, tags: "role_mongodb"}
     - {role: role_sqlite, tags: "role_sqlite"}
     - {role: role_nodejs, tags: "role_nodejs"}  
     - {role: role_ruby, tags: "role_ruby"}  
-    - {role: role_redis, tags: "role_redis"}
+    - {role: role_9panel , tags: "9panel"} 
     - {role: role_init, tags: "role_init"}  
     - {role: role_preend, tags: "preend"}
     - {role: role_end, tags: "role_end"}
