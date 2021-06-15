@@ -3,6 +3,7 @@
 - src: http://github.com/websoft9/role_docker
 - src: http://github.com/websoft9/role_nodejs
 - src: http://github.com/websoft9/role_ruby
+- src: http://github.com/websoft9/role_9panel
 - src: http://github.com/websoft9/role_sqlite
 - src: http://github.com/websoft9/role_mysql
 - src: http://github.com/websoft9/role_nginx  

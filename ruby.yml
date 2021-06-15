@@ -13,24 +13,17 @@
   vars_prompt:
     - name: 'ruby_selection'
       prompt: "Choose the Ruby distribution \n
-      1: Ruby 2.5\n
+      1: Ruby 2.7\n
       2: Ruby 2.6\n"
-      private: no
-      default: 1
-
-    - name: 'mysql_selection'
-      prompt: "Choose the MySQL distribution \n
-      1: MySQL 5.7\n
-      2: MySQL 8.0\n"
       private: no
       default: 1
 
   vars:
     ruby_select:
-      '1': "2.5"
+      '1': "2.7"
       '2': "2.6"
 
-    ruby_distribution: "{{ruby_select[ruby_selection]}}"
+    ruby_version: "{{ruby_select[ruby_selection]}}"
   
   pre_tasks:
     - debug:
@@ -39,7 +32,7 @@
   roles:
     - {role: role_common, tags: "role_common"}  
     - {role: role_cloud, tags: "role_cloud"} 
-    - { role: role_nginx , tags: "role_nginx"}
+    - {role: role_nginx, tags: "role_nginx"}
     - {role: role_docker, tags: "role_docker"}  
     - {role: role_mysql, tags: "role_mysql"}  
     - {role: role_sqlite, tags: "role_sqlite"}
