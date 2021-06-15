@@ -31,7 +31,7 @@
   
   pre_tasks:
     - debug:
-        msg: Will install {{ruby_distribution}}
+        msg: Will install {{ruby_version}}
 
   roles:
     - {role: role_common, tags: "role_common"}  
