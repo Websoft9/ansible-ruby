@@ -1,6 +1,6 @@
 
 w9panel_webs: "nginx" 
-w9panel_set_infrastructure: "Python runtime" 
+w9panel_set_infrastructure: "Ruby Runtime" 
 w9panel_set_apps: 
   - "rails"
 
