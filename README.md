@@ -17,12 +17,12 @@ System Requirement to install this repository are as following：
 | Operating System   | CentOS7.x, Ubuntu, Amazon Linux2 | Optional                 |
 | Public Cloud     | AWS, Azure, Alibaba Cloud, HUAWEI ClOUD, Tencent Cloud    | Optional                 |
 | Private Cloud     | KVM, VMware, VirtualBox, OpenStack    | Optional                 |
-| Server Configuration | vCPU no less than 1 core, Memory no less than  2 GIB, Storage no less than 10 GB, Bandwidth no less than 100M ||
+| Server Configuration | vCPU no less than 2 core, Memory no less than  4 GIB, Storage no less than 10 GB, Bandwidth no less than 100M ||
 
 
 ## Ecosystem
 
-Core components of this repository: Apache Ruby Runtime, Nginx, PostgreSQL, Docker, phpPgAdmin on docker
+Core components of this repository:  Ruby, Rails, NodeJS, Nginx, MySQL, MongoDB,  Docker, phpPgAdmin on docker, adminMongo on docker
 
 Learn more about [Parameters](/docs/stack-components.md).
 
