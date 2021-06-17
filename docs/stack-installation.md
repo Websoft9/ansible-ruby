@@ -10,11 +10,11 @@ If you have completed the Ruby Runtime deployment on Cloud Platform, the followi
 
 ## Usability test
 
-1. 使用本地浏览器访问网址：*http:/服务器公网IP*，进入 Rails 演示项目页面
-   ![Ruby Rails](https://libs.websoft9.com/Websoft9/DocsPicture/zh/ruby/ruby-railsgui-websoft9.png)
+1. Using local Chrome or Firefox to visit the URL *http://DNS* or *http://Instance's Internet IP*, access Rails example page
+   ![Ruby Rails](https://libs.websoft9.com/Websoft9/DocsPicture/en/ruby/ruby-railsgui-websoft9.png)
 
 2. Using local Chrome or Firefox to visit the URL *http://Internet IP/9panel* to enter the boot page
-   ![9panel](https://libs.websoft9.com/Websoft9/DocsPicture/en/9panel/9panelmain-websoft9.png)
+   ![9panel](https://libs.websoft9.com/Websoft9/DocsPicture/en/9panel/9panel-ruby-websoft9.png)
 
 3. You can get the basics of image, manage the database, access docs, and helpdesk from 9Panel
 
