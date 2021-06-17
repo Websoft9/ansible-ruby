@@ -6,7 +6,7 @@ home: false
 
 本文档由 [Websoft9](https://www.websoft9.com/)公司提供，用于指导用户学习 Ruby 应用程序环境的部署与基本运维技术，包括：初始化安装、环境配置、应用程序部署、HTTPS、SMTP、备份升级和连接云服务器操作等基本操作。
 
-[Ruby](https://www.ruby.com/)是一门开源的动态编程语言，注重简洁和效率。Ruby 的句法优雅，读起来自然，写起来舒适。它由日本人发明，混合了多门语言（Perl、Smalltalk、Eiffel、Ada 和 Lisp），创造出了一种兼具函数式编程和命令式编程特色的新语言。
+[Ruby](https://www.ruby-lang.org/)是一门开源的动态编程语言，注重简洁和效率。Ruby 的句法优雅，读起来自然，写起来舒适。它由日本人发明，混合了多门语言（Perl、Smalltalk、Eiffel、Ada 和 Lisp），创造出了一种兼具函数式编程和命令式编程特色的新语言。
 
 ![img](https://libs.websoft9.com/Websoft9/DocsPicture/zh/ruby/ruby-stackframe-websoft9.png)
 
