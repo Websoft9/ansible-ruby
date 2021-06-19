@@ -14,7 +14,7 @@
    ![Ruby Rails](https://libs.websoft9.com/Websoft9/DocsPicture/zh/ruby/ruby-railsgui-websoft9.png)
 
 2. 使用本地浏览器访问网址：*http:/服务器公网IP/9panel*, 就进入引导页面9Panel
-   ![9panel](https://libs.websoft9.com/Websoft9/DocsPicture/zh/ruby/9panel-ruby-websoft9.png)
+   ![9panel](https://libs.websoft9.com/Websoft9/DocsPicture/zh/ruby/ruby-9panel-websoft9.png)
 
 3. 通过 9Panel 可以快速了解环境的基本情况，并管理数据库，找到帮助文档，寻求人工支持
 
