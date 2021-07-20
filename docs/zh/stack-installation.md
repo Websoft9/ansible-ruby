@@ -26,7 +26,7 @@ Ruby Runtime 内置 MySQL 及可视化数据库管理工具 `phpMyadmin` ，[登
 
 ## 安装网站
 
-Ruby Runtime 可以用来部署多个 Ruby 网站，[马上开始吧](/zh/solution-deployment.md)
+Ruby Runtime 可以用来部署多个 Ruby 网站，[马上开始吧](/zh/solution-addapps.md)
 
 ## 常见问题
 

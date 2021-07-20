@@ -26,7 +26,7 @@ Ruby Runtime includes MySQL and Web-GUI tool `phpMyAdmin`, [Log in MySQL](/zh/ad
 
 ## Application Installation
 
-You can install multiple applications on Ruby Runtime, refer to [Applications Deployment](/solution-deployment.md)
+You can install multiple applications on Ruby Runtime, refer to [Applications Deployment](/solution-addapps.md)
 
 ## Q&A
 
