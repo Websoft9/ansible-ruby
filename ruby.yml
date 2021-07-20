@@ -94,6 +94,7 @@
     - {role: role_mongodb, tags: "role_mongodb"}  
     - {role: role_mysql, tags: "role_mysql"}  
     - {role: role_sqlite, tags: "role_sqlite"}
+    - {role: role_redis, tags: "role_redis"} 
     - {role: role_nodejs, tags: "role_nodejs"}  
     - {role: role_ruby, tags: "role_ruby"}  
     - {role: role_9panel , tags: "9panel"} 
