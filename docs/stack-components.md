@@ -81,7 +81,7 @@ The following are the ports you may use:
 | TCP | 9003 | Use port to access Ruby | Optional |
 | TCP | 9002 | Ruby Document Server on Docker | Optional |
 | TCP | 9090 | phpMyAdmin on Docker | Optional |
-
+| TCP | 9091 | adminMongo on Docker | Optional |
 
 ## Version
 

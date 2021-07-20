@@ -6,7 +6,7 @@ home: false
 
 This documentation is provided by [Websoft9](https://www.websoft9.com/). It can help users to acquire skills of Ruby Deployment, Installation, Configuration, HTTPS, SMTP, Backup, Upgrade, Connect Instance and more.
 
-[Ruby](https://www.ruby-lang.org/en) is the most widely deployed open source message broker. With more than 35,000 production deployments of Ruby world-wide at small startups and large enterprises, Ruby is the most popular open source message broker.
+[Ruby](https://www.ruby-lang.org/en) is an open source dynamic programming language, focusing on simplicity and efficiency. Ruby's syntax is elegant, natural to read and comfortable to write. It was invented by Japanese, and mixed many languages (Perl, Smalltalk, Eiffel, ADA and LISP) to create a new language with the characteristics of both functional programming and command programming.
 
 ![img](https://libs.websoft9.com/Websoft9/DocsPicture/en/ruby/ruby-stackframe-websoft9.png)
 
