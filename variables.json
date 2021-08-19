@@ -1,0 +1,18 @@
+{
+  "name": "ruby",
+  "trademark": "Ruby Runtime",
+  "official_url": "https://www.websoft9.com/",
+  "support_os": "CentOS7.x, Ubuntu20.04, Amazon Linux2",
+  "requirements_cpu": "1",
+  "requirements_memory": "1",
+  "requirements_Bandwidth": "100",
+  "requirements_disk": "20",
+  "requirements_swap": "2",
+  "requirements_configure_url": "https://github.com/Websoft9/ansible-ruby/blob/main/README.md",
+  "components": "Ruby, Nginx, MySQL, phpMyAdmin on Docker, MongoDB, adminMongo on Docker, Docker, Redis",
+  "install_way": {
+    "en": "Package isntallation",
+    "zh": "包安装"
+  },
+  "install_url": "https://www.ruby-lang.org/en/downloads/"
+}
