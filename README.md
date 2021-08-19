@@ -6,7 +6,7 @@
 
 [English](/README.md) | [简体中文](/README-zh.md)  
 
-**Ruby Runtime Cloud Installer**, developed by [Websoft9](https://www.websoft9.com), is an automatic installation program of [Ruby Runtime](https://www.websoft9.com/) based on Ansible and shell. It helps user install Ruby Runtime and pre-configure required items automatically and users only need to run a command on Linux. It simplifies the complicated installation and initialization process.  
+**Ruby Runtime Cloud Installer**, developed by [Websoft9](https://www.websoft9.com), is an automatic installation program of [Ruby Runtime](https://www.ruby-lang.org/) based on Ansible and shell. It helps user install Ruby Runtime and pre-configure required items automatically and users only need to run a command on Linux. It simplifies the complicated installation and initialization process.  
 
 ## System Requirement
 
@@ -19,7 +19,7 @@ System Requirement to install this repository are as following：
 | Private Cloud     | KVM, VMware, VirtualBox, OpenStack    | Optional                 |
 | Server Configuration | vCPU no less than 1 core, Memory no less than 1 GIB, Storage no less than 20 GB, Swap no less than 2GB |Bandwidth no less than 100M|
 
-To learn more information, please view [Installation & Configuration](https://github.com/Websoft9/ansible-ruby/blob/main/README.md).
+To learn more information, please view [Installation & Configuration](https://github.com/postmodern/ruby-install).
 
 ## Ecosystem
 

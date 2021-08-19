@@ -3,7 +3,7 @@
 
 [English](/README.md) | [简体中文](/README-zh.md)  
 
-本项目是由 [Websoft9](https://www.websoft9.com) 研发的 [Ruby Runtime](https://www.websoft9.com/) 自动化安装程序，开发语言是 Ansible。使用本项目，只需要用户在 Linux 上运行一条命令，即可自动化安装 Ruby Runtime，并预配置必要项，让原本复杂的安装和与配置过程变得没有任何技术门槛。
+本项目是由 [Websoft9](https://www.websoft9.com) 研发的 [Ruby Runtime](https://www.ruby-lang.org/) 自动化安装程序，开发语言是 Ansible。使用本项目，只需要用户在 Linux 上运行一条命令，即可自动化安装 Ruby Runtime，并预配置必要项，让原本复杂的安装和与配置过程变得没有任何技术门槛。
 
 ## 配置要求
 
@@ -16,7 +16,7 @@
 | 私有云|  KVM, VMware, VirtualBox, OpenStack | 可选 |
 | 服务器配置 | 最低1核1G，存储20GB以上，Swap分区2GB以上 |  建议采用按量100M带宽 |
 
-更多请见： [官方 System requirement](https://github.com/Websoft9/ansible-ruby/blob/main/README.md)。
+更多请见： [官方 System requirement](https://github.com/postmodern/ruby-install)。
 
 ## 组件
 
