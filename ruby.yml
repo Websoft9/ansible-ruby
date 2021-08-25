@@ -21,11 +21,13 @@
       default: 4
     
     - name: 'nodejs_selection'
-      prompt: "\nPlease choose the number for NodeJS version [ 1/2/3/4] \n\n
+      prompt: "\nPlease choose the number for NodeJS version [ 1/2/3/4...] \n\n
       1: NodeJS 10.x\n
       2: NodeJS 12.x\n
       3: NodeJS 13.x\n
-      4: NodeJS 14.x\n"
+      4: NodeJS 14.x\n
+      5: NodeJS 15.x\n
+      6: NodeJS 16.x\n"
       private: no
       default: 4
 
@@ -37,7 +39,8 @@
       4: MongoDB3.6(support Ubuntu16 and Redhat7 family)\n
       5: MongoDB4.0(support Ubuntu18 and Redhat7 family)\n
       6: MongoDB4.2(support Ubuntu18 and Redhat7 family)\n
-      7: MongoDB4.4(support Ubuntu20 and Redhat7 family)\n"
+      7: MongoDB4.4(support Ubuntu20 and Redhat7 family)\n
+      8: MongoDB5.0(support Ubuntu20 and Redhat7 family)\n"
       private: no
       default: 7
 
@@ -63,6 +66,8 @@
       '2': '12'
       '3': '13'
       '4': '14'
+      '5': '15'
+      '6': '16'
     nodejs_version: "{{nodejs_select[nodejs_selection]}}" 
 
     mongodb_select:
@@ -73,6 +78,7 @@
       '5': '4.0'
       '6': '4.2'
       '7': '4.4'
+      '8': '5.0'
     mongodb_version: "{{mongodb_select[mongodb_selection]}}"
 
     mysql_select:
